@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+       <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+       
+       <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="estilos.css">
+       <title>Portafolio</title>
+    </head>
+
+    <body>
+
+        <!--SECCION BARRA-->
+        <div class="contenedor-header">
+            <header>
+                <div class="barra">
+                   <h1>ALEJANDRA</h1>
+                    <nav id="nav">
+                        <ul>
+                           <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                           <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                           <li><a href="#hobbies" onclick="seleccionar()">HOBBIES</a></li>
+                           <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+        <!--SECCION INICIO-->
+        
+        <section id="inicio" class="inicio">
+            
+            <div class="contenido-banner">
+                
+                <h2>SOBRE MI</h2> 
+                <img class="imagenFondo" src="img/fondo.jpeg" >
+               
+                <p class="descripcion"> 
+                ¡HOLA! Soy Alejandra, vivo en Colombia. Actualmente trabajo en una empresa que exporta flores a otros países.
+                Estoy comenzando con el tema de las páginas web, enfocada en el desarrollo de cursos de Alura Latam y ONE.
+                Con mucha actitud para aprender sobre esta maravillosa tecnología ya que me brinda muchos conocimientos y experiencias para mi vida.
+                A continuación les comparto algunas de mis redes sociales:
+                </p>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </section>
+        
+        
+         
+        <!--SECCION SKILLS-->
+        <section id="skills" class="skills".>
+            <div class="contenido-seccion">
+                <h2>SKILLS</h2>
+                <div class="fila"> 
+
+                    <div class="col">
+                        <h3>Estudios</h3>
+                        <div class="skill">
+                            <span>HTML</span>
+                            <div class="barra-skill">
+                                <div class="progreso javascript">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso javascript">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso javascript">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION HOBBIES-->
+        <section id="hobbies">
+            <h3 class="titulo-seccion">HOBBIES</h3>
+                
+                <div class="fila">
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="img/musica.jpg" alt="">
+                        <div class="info">
+                            <h4>ESCUCHAR MUSICA</h4>
+                            <p>Me gusta escuchar musica para relajar la mente</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="img/deporte.jpg" alt="">
+                        <div class="info">
+                            <h4>HACER DEPORTE</h4>
+                            <p>En mis ratos libres hago deporte para ejercitar el cuerpo</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="img/familia.jpg" alt="">
+                        <div class="info">
+                            <h4>FAMILIA</h4>
+                            <p>Con mi familia planear momentos para compartir y reunirnos</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="img/estudiar.jpg" alt="">
+                        <div class="info">
+                            <h4>ESTUDIAR</h4>
+                            <p>Estudiar para aprender cosas nuevas</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <!--SECCION CONTACTOS-->
+        <section id="contacto">
+            <h3 class="titulo-seccion">CONTACTO</h3>
+            <div class="contenedor-form">
+                <form action="">
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre Completo" class="input-mitad" required>
+                        <input type="email" placeholder="Email" class="input-mitad" required>
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Tema..." class="input-full" required >
+                    </div>
+                    <div class="fila">
+                        <textarea  cols="30" rows="10" placeholder="Mensaje..."  class="input-full" required></textarea>
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>
+        </section>
+
+        <!--SECCION FOOTER-->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <p>Desarrollado por Alejandra Muñoz</p>
+            <p>Alura Latam-2024</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,508 @@
+html{
+    /*ME PERMITE DESLIZAR CUANDO HAGO CLIC EN LOS LINKS DEL MENU*/
+    scroll-behavior: smooth;
+}
+
+.contenedor-header {
+    background: rgb(174,58,180);
+    background: linear-gradient(90deg, rgba(174,58,180,1)0%, rgba(63,190,251,1)50%, rgba(174,58,180,1)100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 20vh;
+}
+
+.contenedor-header header {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.contenedor-header .barra h1 {
+    color: #eb6da0;
+    font-size: 39px;
+    font-style: italic;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    color: #080101;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #FF5733;
+    text-decoration: underline;
+}
+
+.nav-responsive {
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inicio {
+    
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/fondo.jpeg");
+    height: 145vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    overflow: auto;
+    width: 100%;
+    
+}
+
+.inicio .contenido-banner {
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.contenido-banner h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 1em;
+    font-weight: bold;
+}
+
+.descripcion {
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-weight: bold;
+    font-style: italic;
+    margin: 20px 50px;
+    
+}
+
+.imagenFondo {
+    width: 250px;
+    border-radius: 100px;
+}
+
+.inicio .contenido-banner .redes a {
+    color: #8E44AD;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, .35);
+}
+
+.inicio .contenido-banner .redes a:hover {
+    border: 5px solid #33FF66;
+    box-shadow: 0 0 15px #33FF66;
+    background-color: #FF99FF;
+    transition: all 0.5s ease;
+}
+
+/* SECCION SKILLS*/
+.skills {
+    background: rgb(174,58,180);
+    background: linear-gradient(90deg, rgba(174,58,180,1)0%, rgba(63,190,251,1)50%, rgba(174,58,180,1)100%);
+    color: #100505;
+    padding: 0;
+    
+    width: 100%;
+    padding: 40px 0;
+    
+    
+
+
+}
+
+.skills .contenido-seccion {
+    width: 940px;
+    margin: auto;
+
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila {
+    display: flex;
+}
+
+.skills .fila .col {
+    width: 50px;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.skills .skill>span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill {
+    height: 6px;
+    width: 1000%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.skills .skill .progreso {
+    background-color: #FF5733;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+}
+
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FF0032;
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: -17px;
+    right: -10px;
+    font-size: 14px;
+}
+
+.skills .skill .HTML {
+    width: 0%;
+    animation: 2s html forwards;
+
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+
+}
+
+.skills .skill .CSS {
+    width: 0%;
+    animation: 2s css forwards;
+
+}
+
+@keyframes CSS {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+
+}
+
+.skills .skill .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+
+}
+
+/*SECCION HOBBIES*/
+#hobbies {
+    background: rgb(174,58,180);
+    background: linear-gradient(90deg, rgba(174,58,180,1)0%, rgba(63,190,251,1)50%, rgba(174,58,180,1)100%);
+    width: 100%;
+    padding: 40px 0;
+    overflow: auto;
+}
+
+#hobbies .titulo-seccion {
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+#hobbies .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 30px;
+}
+
+#hobbies .fila .proyecto {
+    max-width: 250px;
+    border: 1px solid #000;
+    margin: 9px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#hobbies .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+    display: block;
+    width: 250px;
+
+
+}
+
+#hobbies .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#hobbies .fila .proyecto .info {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #ff5080;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#hobbies .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+    transform: translateY(0);
+}
+
+/*SECCION CONTACTO*/
+
+#contacto {
+    background: rgb(174,58,180);
+    background: linear-gradient(90deg, rgba(174,58,180,1)0%, rgba(63,190,251,1)50%, rgba(174,58,180,1)100%);
+    width: 100%;
+    padding: 40px 0;
+     
+}
+
+#contacto .titulo-seccion {
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+#contacto .contenedor-form {
+    max-width: 800px;
+    margin: auto;
+
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#contacto .contenedor-form input,
+textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191
+}
+
+#contacto .contenedor-form .mitad input {
+    width: 40%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto.btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #FF5080;
+    color: #fff;
+}
+
+footer {
+    background: rgb(174,58,180);
+    background: linear-gradient(90deg, rgba(174,58,180,1)0%, rgba(63,190,251,1)50%, rgba(174,58,180,1)100%);
+    
+    padding: 50px 0;
+    background-color: #000;
+    color: #080606;
+    text-align: center;
+    font-size: 20px;
+    
+    width: 100%;
+   padding: 40px 0;
+
+}
+
+/*SECCION RESPONSIVE*/
+
+@media screen and (max-width:980px) {
+    h1 {
+        text-align: center;
+    }
+
+
+
+
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: rgba(125, 153, 244, 0.8);
+        width: 180px;
+        position: absolute;
+        top: 75px;
+
+    }
+
+    nav.responsive ul {
+        display: block !important;
+
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+
+        padding: 10px 0;
+
+    }
+
+    
+    
+    .contenido-banner {
+        padding: 0.5rem;
+        
+        
+        
+    }
+
+    .descripcion {
+        font-size: 0.9rem;
+        
+    }
+
+    .redes a {
+        font-size: 1.2rem;
+    }
+
+
+
+    /*configuracion barras de SKILLS para que se adapten a las pantallas pequeñas*/
+
+    .skills .contenido-seccion {
+        width: auto; /* Establecer el ancho del contenido al 100% */
+        padding: 20px; /* Añadir un espacio alrededor del contenido */
+    }
+    .skills .col {
+        width: auto;
+        /* Ajustar el ancho de las columnas al 100% */
+        margin-bottom: 20px;
+        /* Añadir un espacio entre las columnas */
+    }
+
+    .skills .skill {
+        width: calc(100% - 40px);
+        /* Ajustar el ancho de las habilidades para ocupar todo el ancho disponible, restando el
+            margin-bottom: 15px; /* Añadir un espacio entre las habilidades */
+        
+        margin-bottom: 15px;
+    }
+
+    .skills .barra-skill {
+        width: auto;
+        /* Hacer que las barras de habilidades ocupen todo el ancho disponible */
+    }
+
+    .skills .progreso {
+        width: auto;
+        /* Ajustar el ancho de las barras de progreso para dispositivos pequeños */
+    }
+
+    .skills .skill .barra-skill span {
+        top: -17px;
+        /* Ajustar la posición vertical del texto en la barra de habilidades */
+        right: -10px;
+        /* Ajustar la posición horizontal del texto en la barra de habilidades */
+        width: auto;
+    }
+
+    .fila.mitad .input-mitad {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .fila.mitad .input-mitad:last-child {
+        margin-bottom: 0;
+    }
+}
